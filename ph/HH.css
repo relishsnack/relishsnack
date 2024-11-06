@@ -1,0 +1,109 @@
+/* Applique l'image d'arrière-plan sur toute la page */
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('317979765_106284775660679_106890305831607078_n.jpg');
+    background-size: cover; /* Couvre toute la page */
+    background-position: center; /* Centre l'image */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Change pour que l'image ne coupe pas le titre */
+    padding-top: 20px; /* Assure un espace entre le haut de la page et le titre */
+}
+
+/* Style du titre en haut de la page */
+header {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent derrière le titre */
+    padding: 10px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0; /* Retirer tout espace par défaut autour du titre */
+}
+
+/* Style de l'image centrale */
+.content img {
+    max-width: 80%; /* Limite la taille de l'image centrale */
+    height: auto; /* Garde les proportions */
+    margin-bottom: 20px; /* Un petit espace sous l'image */
+}
+
+/* Style pour la section d'informations sous l'image */
+.info {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre transparent */
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Lien sous forme de bouton */
+.info a {
+    color: #00bfae;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query pour les écrans plus petits (mobiles) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Taille du titre plus petite sur mobile */
+    }
+
+    .content img {
+        max-width: 90%; /* L'image occupe plus d'espace sur mobile */
+    }
+
+    .info {
+        padding: 15px; /* Moins de padding sur mobile */
+    }
+
+    .info p {
+        font-size: 0.9em; /* Texte plus petit pour les petits écrans */
+    }
+}
+
+/* Media Query pour les très petits écrans (téléphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Encore plus petit pour les très petits écrans */
+    }
+
+    .content img {
+        max-width: 95%; /* L'image prend presque toute la largeur sur très petits écrans */
+    }
+
+    .info {
+        padding: 10px; /* Moins de padding pour les petits écrans */
+    }
+
+    .info p {
+        font-size: 0.8em; /* Texte encore plus petit */
+    }
+}
+.bouton {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white;              /* Couleur du texte */
+    padding: 15px 32px;        /* Taille du bouton */
+    text-align: center;        /* Alignement du texte */
+    text-decoration: none;     /* Pas de soulignement */
+    font-size: 16px;           /* Taille de la police */
+    border-radius: 8px;        /* Coins arrondis */
+    display: inline-block;     /* Pour qu'il ressemble à un bouton */
+    transition: background-color 0.3s; /* Transition pour l'effet hover */
+}
+
+.bouton:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+}

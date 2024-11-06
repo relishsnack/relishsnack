@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("ph/317979765_106284775660679_106890305831607078_n.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Styles pour le header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Mise en page principale */
+main {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section-image {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* Styles responsives */
+
+/* Pour les petits écrans (smartphones) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 40px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    #search {
+        width: 90%;
+        font-size: 14px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .section-image {
+        width: 80px;
+    }
+}
+
+/* Pour les grands écrans (télévisions et grands moniteurs) */
+@media (min-width: 1200px) {
+    body {
+        background-size: contain;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    #search {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .section-image {
+        width: 150px;
+    }
+}
+.bouton {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white;              /* Couleur du texte */
+    padding: 15px 32px;        /* Taille du bouton */
+    text-align: center;        /* Alignement du texte */
+    text-decoration: none;     /* Pas de soulignement */
+    font-size: 16px;           /* Taille de la police */
+    border-radius: 8px;        /* Coins arrondis */
+    display: inline-block;     /* Pour qu'il ressemble à un bouton */
+    transition: background-color 0.3s; /* Transition pour l'effet hover */
+}
+
+.bouton:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+}
